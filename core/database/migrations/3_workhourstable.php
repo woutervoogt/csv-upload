@@ -18,7 +18,7 @@ return [
         uurcode varchar(255) NOT NULL,
         created timestamp,
         updated timestamp DEFAULT CURRENT_TIMESTAMP,
-        deleted timestamp,
+        deleted timestamp NULL,
         FOREIGN KEY(user_id) REFERENCES users(id),
         FOREIGN KEY(file_id) REFERENCES files(id)
     ) ENGINE=INNODB  DEFAULT CHARSET=latin1;'

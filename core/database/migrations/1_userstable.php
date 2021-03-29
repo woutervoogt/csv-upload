@@ -13,7 +13,7 @@ return [
         password varchar(255) NOT NULL,
         created timestamp,
         updated timestamp DEFAULT CURRENT_TIMESTAMP,
-        deleted timestamp
+        deleted timestamp NULL
     ) ENGINE=INNODB  DEFAULT CHARSET=latin1;',
 
     'seeder' => [
